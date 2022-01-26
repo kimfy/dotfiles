@@ -1,13 +1,18 @@
 # .dotfiles
 
-The contents of this repository contains all my dotfiles.
+These are my dotfiles
 
-## TODO
-1. Installation file (gist)
+Applications include
+- fish shell
+- neovim
+- tmux
 
 ## Installation (on a new device)
 
-### Requirements
+```fish
+curl -Lks https://gist.github.com/kimfy/333b07f00f8f78a2a3e6831affe35f0f/raw/ | /bin/bash -x
+```
 
-1. fish shell
-2. 
+**NOTE**
+If there are any errors with GitHub authentication, try installing git-credential-manager-core and configure it.
+
