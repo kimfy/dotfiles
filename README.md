@@ -39,23 +39,25 @@ fc-cache -f -v
 4. Close and re-launch the terminal
 5. You may have to change to the previously downloaded font
 
-## fish shell 
+## [fish shell](https://fishshell.com/) 
 
-I use fish shell. https://fishshell.com/
+I use fish shell. 
 ```bash
 sudo apt-get install fish
 ```
+### [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish#installation)
 
-## tmux
+I use oh-my-fish for my fish plugins. Install it by following the instructions from the URL above.
+
+## [tmux](https://github.com/tmux/tmux)
 
 I use tmux for terminal splitting https://github.com/tmux/tmux/wiki
-### Install tpm from https://github.com/tmux-plugins/tpm
 
-```bash
-sudo apt-get install tmux
-```
+### [tpm](https://github.com/tmux-plugins/tpm#installation)
 
-## neovim
+I use tpm for my tmux plugins. Install it by following the instructions from the URL above.
+
+## [neovim](https://github.com/neovim/neovim#install-from-source)
 
 I use neovim as my editor/ide.
 
