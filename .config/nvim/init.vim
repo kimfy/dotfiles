@@ -1,3 +1,5 @@
+" Highlight the current line in all modes
+set cursorline
 " # This first section configures Neovim's default settings.
 " Hybrid Relative Line Numbers <3
 set number relativenumber
