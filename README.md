@@ -43,7 +43,7 @@ fc-cache -f -v
 
 I use fish shell. 
 ```bash
-sudo apt-get install fish
+sudo apt install fish
 ```
 ### [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish#installation)
 
