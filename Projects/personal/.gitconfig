@@ -1,3 +1,8 @@
 [user]
   email = kim@wwan.no
   name = "kimfy"
+
+# This section lets me use different credentials for different repositories.
+# Source: https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/multiple-users.md
+[url "https://kimfy@github.com"]
+  insteadOf = "https://github.com"
