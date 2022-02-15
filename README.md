@@ -1,5 +1,12 @@
 # .dotfiles
-These are my dotfiles and also steps on how to set up the shell
+My dotfiles.
+
+My dotfiles include .gitconfig files for git, it supports multiple users (work, personal.). It changes the way I clone git repositories. To clone a repository with my personal account I need to specify my username. Example:
+```bash
+git clone https://kimfy@github.com/user/repo.git
+```
+
+The .gitconfig files in P/work and P/personal replace https://github.com with https://work or personal account.github.com for all sub git directories.
 
 ## dotfiles installation (on a new device)
 
