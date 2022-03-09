@@ -1,3 +1,6 @@
+" Set clipboard to system clipboard (makes + and * registers useless.) Makes
+" it possible to copy text between different nvim instances.
+set clipboard+=unnamedplus
 " Highlight the current line in all modes
 set cursorline
 " # This first section configures Neovim's default settings.
@@ -57,7 +60,7 @@ Plug 'hashivim/vim-terraform'
 " The nicest theme EVER.
 Plug 'ellisonleao/gruvbox.nvim'
 
-
+Plug 'ellisonleao/glow.nvim'
 " coq (fast as FUCK nvim completion)
 " main one
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
@@ -85,3 +88,4 @@ lua <<EOF
 EOF
 autocmd BufWritePre *.cs lua vim.lsp.buf.formatting_sync()
 autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()
+autocmd BufWritePre *.tfvars lua vim.lsp.buf.formatting_sync()
