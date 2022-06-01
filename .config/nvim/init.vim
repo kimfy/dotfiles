@@ -66,6 +66,10 @@ Plug 'ellisonleao/glow.nvim'
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 " 9000+ Snippets
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+" Dynamic register peeking. Source: https://github.com/gennaro-tedesco/nvim-peekup
+Plug 'gennaro-tedesco/nvim-peekup'
+" Create missing directories on save (mkdir -p). Source: https://github.com/jghauser/mkdir.nvim
+Plug 'jghauser/mkdir.nvim'
 call plug#end()
 
 " coq, by default has an annoying autostart message. This shuts it.
