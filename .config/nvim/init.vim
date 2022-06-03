@@ -70,6 +70,12 @@ Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'gennaro-tedesco/nvim-peekup'
 " Create missing directories on save (mkdir -p). Source: https://github.com/jghauser/mkdir.nvim
 Plug 'jghauser/mkdir.nvim'
+
+" Another file-tree plugin. Supposedly good integration with barbar.nvim
+Plug 'kyazdani42/nvim-tree.lua'
+" THE tabline plugin for neovim. Source: https://github.com/romgrk/barbar.nvim#integration-with-filetree-plugins
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 call plug#end()
 
 " coq, by default has an annoying autostart message. This shuts it.
@@ -93,3 +99,9 @@ EOF
 autocmd BufWritePre *.cs lua vim.lsp.buf.formatting_sync()
 autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()
 autocmd BufWritePre *.tfvars lua vim.lsp.buf.formatting_sync()
+
+" barbar.nvim configuration
+" to enable clicking with barbar.vim
+set mouse+=a
+:lua require 'my-barbar'
+:lua require 'my-nvim-tree'
