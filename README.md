@@ -56,13 +56,37 @@ sudo apt install fish
 
 I use oh-my-fish for my fish plugins. Install it by following the instructions from the URL above.
 
+**fish plugins**
+
+Install these with `omf i <name>`
+
+- fish-spec
+- vcs
+- z
+
 ## [tmux](https://github.com/tmux/tmux)
 
 I use tmux for terminal splitting https://github.com/tmux/tmux/wiki
 
+**tmux plugins**
+
+List of plugins: https://github.com/tmux-plugins/list
+
+Plugins I use:
+
+- 'tmux-plugins/tpm'
+- 'tmux-plugins/tmux-yank'
+- 'egel/tmux-gruvbox'
+- 'tmux-plugins/tmux-resurrect'
+- 'tmux-plugins/tmux-continuum'
+- 'laktak/extrakto'
+  - requires fzf, python3.6, bash
+- 'schasse/tmux-jump'
+
 ### [tpm](https://github.com/tmux-plugins/tpm#installation)
 
 I use tpm for my tmux plugins. Install it by following the instructions from the URL above.
+Install any tmux plugin with C-a+I
 
 ## [neovim](https://github.com/neovim/neovim#install-from-source)
 
