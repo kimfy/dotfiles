@@ -95,6 +95,7 @@ let g:terraform_fmt_on_save=1
 lua <<EOF
   require'lspconfig'.terraformls.setup{} 
   require'lspconfig'.csharp_ls.setup{}
+  require'lspconfig'.tsserver.setup{}
 EOF
 autocmd BufWritePre *.cs lua vim.lsp.buf.formatting_sync()
 autocmd BufWritePre *.tf lua vim.lsp.buf.formatting_sync()
