@@ -37,6 +37,7 @@ SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_user_paths:/usr/local/bin/PhpStorm\x2d221\x2e5591\x2e58/bin\x1e/home/kim/Projects/work/nomad/nomad\x2dpack/bin\x1e/home/kim/Downloads/nomad\x2dpack/bin\x1e/home/kim/Projects/work/openshift\x2daz/path\x1e/home/kim/\x2efzf/bin
 SETUVAR nvm_data:/home/kim/\x2elocal/share/nvm
+SETUVAR nvm_default_version:lts
 SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
