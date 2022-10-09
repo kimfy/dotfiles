@@ -62,3 +62,13 @@ nnoremap("n",  "nzz")
 nnoremap("N",  "Nzz")
 nnoremap("G",  "Gzz")
 
+
+-- Nvim-Tree
+nnoremap("<leader>ft", function() 
+  require('nvim-tree.api').tree.toggle()
+end)
+
+nnoremap("<leader>ff", function() 
+  require('nvim-tree.api').tree.focus()
+end)
+
