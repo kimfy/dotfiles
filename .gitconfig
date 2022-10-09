@@ -11,3 +11,5 @@
 
 [includeIf "gitdir:~/Projects/personal/**"]
   path = ~/Projects/personal/.gitconfig
+[credential "https://gitlab.com"]
+	provider = generic
