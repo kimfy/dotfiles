@@ -1,6 +1,15 @@
 set -g theme_color_scheme gruvbox
 alias config='/usr/bin/git --git-dir=/home/kim/.my-dotfiles/ --work-tree=/home/kim'
-alias tmux='TERM=screen-256color tmux'
+# alias tmux='TERM=screen-256color tmux'
+
+
+function t --wraps tmux --description 'alias t=TERM=screen-256color tmux'
+  TERM=screen-256color tmux
+end
+
+function ii --description 'xdg-open .'
+  xdg-open $argv
+end
 
 # liquidctl --serial $NZXT_CPU_SERIAL set fan speed 40
 # liquidctl --serial $NZXT_GPU_SERIAL set fan speed 40
