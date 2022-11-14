@@ -90,15 +90,13 @@ Install any tmux plugin with C-a+I
 
 ## [neovim](https://github.com/neovim/neovim#install-from-source)
 
-I use neovim as my editor/ide.
-
-**Installing neovim from source**
+**Install neovim from source**
 
 Follow the official instructions from neovim's GitHub page https://github.com/neovim/neovim#install-from-source 
 
-**Setting up neovim plugins that require external binaries**
+Install [Packer](https://github.com/wbthomason/packer.nvim#quickstart), open `neovim` and type `:PackerUpdate`.
 
-* Install vim-plug from https://github.com/junegunn/vim-plug 
+**neovim plugins that require external binaries**
+ 
 * Install coq_nvim pre-requisites https://github.com/ms-jpq/coq_nvim#install
-* Open neovim and run :PlugUpdate (Ignore any errors on neovim's startup)
 
