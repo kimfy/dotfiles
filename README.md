@@ -82,6 +82,7 @@ Plugins I use:
 - 'laktak/extrakto'
   - requires fzf, python3.6, bash
 - 'schasse/tmux-jump'
+  - requires ruby
 
 ### [tpm](https://github.com/tmux-plugins/tpm#installation)
 
