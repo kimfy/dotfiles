@@ -15,6 +15,7 @@ vim.opt.clipboard = "unnamedplus"
 
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = true
+vim.opt.wrap = false
 
 --vim.opt.termguicolors = true
 

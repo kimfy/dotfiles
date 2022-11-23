@@ -1,4 +1,5 @@
 local Remap = require("kimiversen.keymap")
+local nmap = Remap.nmap
 local nnoremap = Remap.nnoremap
 local inoremap = Remap.inoremap
 
@@ -26,9 +27,8 @@ nnoremap("<leader>tf", function()
     require('telescope.builtin').live_grep()
 end)
 
-
 -- coc
-local opts = {silent = true, noremap = true, expr = true, replace_keycodes = true}
+local opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
 inoremap("<c-space>", "coc#refresh()", opts)
 -- coc-automcompletion
 -- Tab for next element
@@ -37,6 +37,8 @@ inoremap("<Tab>", [[coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"]], opts)
 inoremap("<S-Tab>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
 -- Enter to complete suggestion
 inoremap("<CR>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"]], opts)
+--nnoremap("<CR>", function() 
+--end)
 
 function _G.show_docs()
     local cw = vim.fn.expand('<cword>')
@@ -60,15 +62,30 @@ nnoremap("<C-u>",  "<C-u>zz")
 nnoremap("<C-d>",  "<C-d>zz")
 nnoremap("n",  "nzz")
 nnoremap("N",  "Nzz")
-nnoremap("G",  "Gzz")
+nnoremap("gg", "gg0")
+nnoremap("G",  "Gzz0")
 
 
 -- Nvim-Tree
 nnoremap("<leader>ft", function() 
   require('nvim-tree.api').tree.toggle()
 end)
-
+ 
 nnoremap("<leader>ff", function() 
   require('nvim-tree.api').tree.focus()
 end)
+ 
+-- 'mg979/vim-visual-multi'
+vim.keymap.set(
+    {"n"},
+    "<C-k>",
+    ":call vm#commands#add_cursor_up(0, v:count1)<cr>",
+    { noremap = true, silent = true }
+) 
 
+vim.keymap.set(
+    {"n"},
+    "<C-j>",
+    ":call vm#commands#add_cursor_down(0, v:count1)<cr>",
+    { noremap = true, silent = true }
+)

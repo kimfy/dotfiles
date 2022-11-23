@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
   -- Collection of community-contributed configurations for the built-in language server client in Nvim core.
   -- see :help lspconfig
   use 'neovim/nvim-lspconfig'
-
+ 
   -- The goal of nvim-treesitter is both to provide a simple and easy way to use the interface for tree-sitter in Neovim and to provide some basic functionality such as highlighting based on it:
   use {
       'nvim-treesitter/nvim-treesitter',
@@ -17,11 +17,11 @@ return require('packer').startup(function(use)
           local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
           ts_update()
       end
-  }
+  } 
 
   use {
     'neoclide/coc.nvim', branch = 'release'
-  }
+  } 
 
   use {
     'nvim-telescope/telescope.nvim',
@@ -36,4 +36,14 @@ return require('packer').startup(function(use)
 --    'm-demare/hlargs.nvim',
 --    requires = { 'nvim-treesitter/nvim-treesitter' }
 --  }
+
+  -- Highlight pattern searching and substitutes
+  use {
+    'markonm/traces.vim'
+  }
+
+  -- Multi-cursor 
+  use {
+    'mg979/vim-visual-multi'
+  }
 end)
