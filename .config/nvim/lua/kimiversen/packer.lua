@@ -46,4 +46,8 @@ return require('packer').startup(function(use)
   use {
     'mg979/vim-visual-multi'
   }
+
+  use {
+    'ThePrimeagen/vim-be-good'
+  }
 end)
