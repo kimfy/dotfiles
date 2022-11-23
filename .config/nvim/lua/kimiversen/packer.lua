@@ -50,4 +50,10 @@ return require('packer').startup(function(use)
   use {
     'ThePrimeagen/vim-be-good'
   }
+
+  -- Dim inactive windows
+  use 'sunjon/shade.nvim'
+
+  -- Dim inactive code
+  use 'folke/twilight.nvim'
 end)
