@@ -1,7 +1,8 @@
 require'lspconfig'.pyright.setup{}
 --require'lspconfig'.terraformls.setup{}
-require'lspconfig'.phpactor.setup{
-}
+--require'lspconfig'.phpactor.setup{
+--}
+require'lspconfig'.intelephense.setup{}
 
 require'lspconfig'.terraformls.setup{}
 vim.api.nvim_create_autocmd({"BufWritePre"}, {
@@ -10,3 +11,5 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
 })
 
 require'lspconfig'.tsserver.setup{}
+
+--require('hlargs').setup()
