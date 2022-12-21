@@ -1,3 +1,4 @@
+vim.api.nvim_exec('language en_US', true)
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -7,7 +8,6 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.hlsearch = false
 vim.incsearch = true
-
 vim.opt.smartindent = true
 
 -- Vim clipboard is available between nvim instances
