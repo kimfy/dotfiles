@@ -19,3 +19,20 @@ vim.keymap.set("n", "<leader>x", function()
   end
 end,
 {silent = true})
+
+-- Tab management
+-- Create a new tab
+  vim.keymap.set("n", "tc", ":tabe<CR>")
+  -- Go to next tab
+  vim.keymap.set("n", "tn", "gt")
+  -- Go to previous tab
+  vim.keymap.set("n", "tp", "gT")
+  -- Close current tab
+  vim.keymap.set("n", "tq", ":tabc<CR>")
+
+-- Terminal
+  -- Enter normal mode with Escape in terminal mode
+  vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+  -- Open a terminal in a new tab, enter insert mode
+  vim.keymap.set("n", "<leader>tc", ":tabe +terminal<CR>i")
+
