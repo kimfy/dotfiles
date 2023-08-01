@@ -51,7 +51,11 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},
       {'rafamadriz/friendly-snippets'},
     }
-}
+  }
+  -- https://github.com/ray-x/go.nvim
+  -- Modern Go dev plugin, based on gopls, treesitter AST, Dap and a variety of go tools. 
+  use 'ray-x/go.nvim'
+  use 'ray-x/guihua.lua' -- recommended if need floating window support
 
 --------------------------------------------------------------------------------
 -- fluff
