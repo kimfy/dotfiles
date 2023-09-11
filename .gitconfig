@@ -13,3 +13,5 @@
   path = ~/Projects/personal/.gitconfig
 [credential "https://gitlab.com"]
 	provider = generic
+[init]
+	defaultBranch = trunk
