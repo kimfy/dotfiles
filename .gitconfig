@@ -1,6 +1,6 @@
 [credential]
 	helper = 
-	helper = /usr/local/bin/git-credential-manager
+	helper = /usr/local/bin/git-credential-manager-core
 	credentialstore = gpg
 
 [credential "https://dev.azure.com"]

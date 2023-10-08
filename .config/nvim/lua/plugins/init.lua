@@ -20,4 +20,7 @@ return {
 
   -- icons
   { "nvim-tree/nvim-web-devicons", lazy = true },
+  
+  -- file explorer
+  { "nvim-tree/nvim-tree.lua" },
 }
