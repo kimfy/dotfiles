@@ -36,3 +36,6 @@ end,
   -- Open a terminal in a new tab, enter insert mode
   vim.keymap.set("n", "<leader>tc", ":tabe +terminal<CR>i")
 
+
+-- Display LSP errors
+vim.keymap.set("n", "gl", vim.diagnostic.open_float)
