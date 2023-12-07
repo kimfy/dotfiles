@@ -23,4 +23,7 @@ return {
   
   -- file explorer
   { "nvim-tree/nvim-tree.lua" },
+  -- prettier.nvim
+  {'jose-elias-alvarez/null-ls.nvim'},
+  {'MunifTanjim/prettier.nvim'},
 }
