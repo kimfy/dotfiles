@@ -1,6 +1,6 @@
 [credential]
 	helper = 
-	helper = /usr/local/bin/git-credential-manager-core
+	helper = /usr/local/bin/git-credential-manager
 	credentialstore = gpg
 
 [credential "https://dev.azure.com"]
@@ -9,12 +9,12 @@
 #[includeIf "gitdir:~/Projects/work/**"]
 #  path = ~/Projects/work/.gitconfig
 
-[includeIf "gitdir:~/Projects/personal/**"]
-  path = ~/Projects/personal/.gitconfig
+#[includeIf "gitdir:~/Projects/personal/**"]
+#  path = ~/Projects/personal/.gitconfig
 [credential "https://gitlab.com"]
 	provider = generic
 [init]
 	defaultBranch = trunk
 [user]
-	email = kim@wwan.no
 	name = Kim Iversen
+	email = kim@wwan.no
