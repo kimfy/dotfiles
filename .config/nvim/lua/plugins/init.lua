@@ -26,4 +26,7 @@ return {
   -- prettier.nvim
   {'jose-elias-alvarez/null-ls.nvim'},
   {'MunifTanjim/prettier.nvim'},
+
+  -- GitHub Copilot
+  'github/copilot.vim', 
 }

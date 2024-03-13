@@ -1,5 +1,5 @@
 #set -g theme_color_scheme gruvbox
-alias config='/usr/bin/git --git-dir=/home/kim/.my-dotfiles/ --work-tree=/home/kim'
+alias config="/usr/bin/env git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 # alias tmux='TERM=screen-256color tmux'
 
 

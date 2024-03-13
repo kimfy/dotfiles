@@ -1,20 +1,20 @@
-[credential]
-	helper = 
-	helper = /usr/local/bin/git-credential-manager
-	credentialstore = gpg
-
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 
-#[includeIf "gitdir:~/Projects/work/**"]
-#  path = ~/Projects/work/.gitconfig
-
-#[includeIf "gitdir:~/Projects/personal/**"]
-#  path = ~/Projects/personal/.gitconfig
-[credential "https://gitlab.com"]
-	provider = generic
 [init]
 	defaultBranch = trunk
+
 [user]
 	name = Kim Iversen
 	email = kim@wwan.no
+	signingkey = 03D6D1DD5C3A87AF
+
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = /opt/homebrew/bin/gpg
+
