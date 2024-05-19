@@ -1,10 +1,10 @@
 -- Center file on movement
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Go up half a page and center" })
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Go down half a page and center" })
-vim.keymap.set("n", "n", "nzzzv", { desc = "Go to next search result and center" })
-vim.keymap.set("n", "N", "Nzzzv", { desc = "Go to previous search result and center" })
-vim.keymap.set("n", "gg","gg0", { desc = "Go to first line and reset cursor to first column" })
-vim.keymap.set("n", "G", "Gzz0", { desc = "Go to last line and reset cursor to first column" })
+vim.keymap.set("n", "n", "nzzzv",       { desc = "Go to next search result and center" })
+vim.keymap.set("n", "N", "Nzzzv",       { desc = "Go to previous search result and center" })
+vim.keymap.set("n", "gg","gg0",         { desc = "Go to first line and reset cursor to first column" })
+vim.keymap.set("n", "G", "Gzz0",        { desc = "Go to last line and reset cursor to first column" })
 
 -- Move selection up/down with J, K. Respects indentation
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", {desc = "Move selection down"})
@@ -24,18 +24,18 @@ end,
 -- Create a new tab
   vim.keymap.set("n", "tc", ":tabe<CR>", { desc = "Create new tab" })
   -- Go to next tab
-  vim.keymap.set("n", "tn", "gt")
+  vim.keymap.set("n", "tn", "gt",        { desc = "Create a new tab" })
   -- Go to previous tab
-  vim.keymap.set("n", "tp", "gT")
+  vim.keymap.set("n", "tp", "gT",        { desc = "Go to the previous tab" })
   -- Close current tab
-  vim.keymap.set("n", "tq", ":tabc<CR>")
+  vim.keymap.set("n", "tq", ":tabc<CR>", { desc = "Close the current tab" })
 
 -- Terminal
   -- Enter normal mode with Escape in terminal mode
-  vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+  vim.keymap.set("t", "<Esc>", "<C-\\><C-n>",               { desc = "Enter normal mode" })
   -- Open a terminal in a new tab, enter insert mode
-  vim.keymap.set("n", "<leader>tc", ":tabe +terminal<CR>i")
-
+  vim.keymap.set("n", "<leader>tc", ":tabe +terminal<CR>i", { desc = "Open a terminal" })
 
 -- Display LSP errors
-vim.keymap.set("n", "gl", vim.diagnostic.open_float)
+vim.keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "Display LSP errors" })
+
