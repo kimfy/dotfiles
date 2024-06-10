@@ -1,6 +1,3 @@
-[credential "https://dev.azure.com"]
-	useHttpPath = true
-
 [init]
 	defaultBranch = trunk
 
@@ -9,12 +6,14 @@
 	email = kim@wwan.no
 	signingkey = 03D6D1DD5C3A87AF
 
-[credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
-
 [commit]
 	gpgsign = true
 
 [gpg]
 	program = /opt/homebrew/bin/gpg
 
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+
+[credential "https://dev.azure.com"]
+	useHttpPath = true

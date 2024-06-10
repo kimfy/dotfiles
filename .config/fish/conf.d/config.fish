@@ -22,8 +22,10 @@ set NZXT_GPU_SERIAL 6D71587C525
 set -g TERM screen-256color
 
 fish_add_path /usr/local/go/bin
-set GOPATH /home/kim/go 
+set -x GOPATH $HOME/go 
+set -x GOBIN $GOPATH/bin
 fish_add_path $GOPATH/bin
+fish_add_path $GOBIN
 
 set --universal nvm_default_version latest
 
