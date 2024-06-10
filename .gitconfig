@@ -17,3 +17,9 @@
 
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+
+# Include work specific gitconfig where I change the email address
+# and other settings.
+[includeIf "gitdir:~/Developer/work/**"]
+    path = ~/Developer/work/.gitconfig
+
